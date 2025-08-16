@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url('596b8fed52b2cedb3addf527c150534c.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen */
+    }
+
+    .hidden { display: none; }
+    #language-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .avatar {
+      width: 80px; /* Cambiado de 120px a 80px */
+      height: 80px; /* Cambiado de 120px a 80px */
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 1rem;
+    }
+
+    .img-section {
+      max-width: 250px; /* Cambiado de 400px a 250px */
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="head">
+    <div class="logo"><a href="#">Mi Portfolio</a></div>
+    <nav class="navbar">
+      <a href="#sobre-mi">Sobre Mí</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="language-toggle" onclick="toggleLanguage()">
+      <img src="descargar.png" alt="Cambiar idioma" style="width: 24px; height: 24px;">
+    </button>
+
+    <!-- FOTO DE PERFIL -->
+    <img class="avatar" src="Imagen de WhatsApp 2025-08-16 a las 10.10.32_9b9757b7.jpg" alt="Foto de perfil de Luis" />
+  </header>
+
+  <main>
+    <h1 class="title1">Luis Ángel Rodríguez Márquez</h1>
+    <h1 class="title" data-es="Bienvenido a mi portfolio" data-en="Welcome to my portfolio">
+      Bienvenido a mi portfolio
+    </h1>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <h2 class="title" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
+      <p data-es="Mi nombre es Luis Ángel Rodríguez Márquez, tengo 20 años. Vivo en Santa Cruz, Guanacaste. Actualmente soy estudiante de la carrera de Ingeniería en Sistemas de Información. Voy por mi tercer año y he adquirido experiencia en el desarrollo de aplicaciones web, software y bases de datos. He trabajado en proyectos como el desarrollo de un sistema de gestión de inventarios en tienda o empresas en el proceso de mi carrera."
+         data-en="My name is Luis Ángel Rodríguez Márquez, I am 20 years old. I live in Santa Cruz, Guanacaste. I am currently a student of the Information Systems Engineering career. I am in my third year and have gained experience in the development of web applications, software and databases. I have worked on projects such as the development of an inventory management system for stores or companies during my studies.">
+         Mi nombre es Luis Ángel Rodríguez Márquez, tengo 20 años. Vivo en Santa Cruz, Guanacaste. Actualmente soy estudiante de la carrera de Ingeniería en Sistemas de Información. Voy por mi tercer año y he adquirido experiencia en el desarrollo de aplicaciones web, software y bases de datos. He trabajado en proyectos como el desarrollo de un sistema de gestión de inventarios en tienda o empresas en el proceso de mi carrera.
+      </p>
+
+      <!-- FOTO EXTRA SOBRE MÍ -->
+      <img class="img-section" src="" alt="Imagen representativa sobre mí" />
+    </section>
+
+    <section id="educacion" class="educacion">
+      <h2 class="title" data-es="Educación" data-en="Education">Educación</h2>
+      <p data-es="Técnico en Ciberseguridad  — Colegio CEEES de Santa Cruz" data-en="Technical Diploma in Networks — Nicoya Technical College">
+        Técnico medio en Redes — Colegio Técnico de Nicoya
+      </p>
+      <!-- FOTO DE EDUCACIÓN -->
+      <img class="img-section" src="descargar (1) - copia.png" alt="Imagen de estudios o educación" />
+
+      <p data-es="Universidad Nacional – Ingeniería en Sistemas de Información" data-en="National University – Information Systems Engineering">
+        Universidad Nacional – Ingeniería en Sistemas de Información
+      </p>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+      <h2 class="title" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+      <p data-es="Sistema de gestión de inventarios desarrollado durante mis estudios, enfocado en el control y administración de productos en tiendas y empresas." 
+         data-en="Inventory management system developed during my studies, focused on the control and administration of products in stores and companies.">
+         Sistema de gestión de inventarios desarrollado durante mis estudios, enfocado en el control y administración de productos en tiendas y empresas.
+      </p>
+
+      <!-- FOTO DE PROYECTOS -->
+      <img class="img-section" src="descargar (1).png" alt="Captura de un proyecto desarrollado" />
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2 class="title" data-es="Contacto" data-en="Contact">Contacto</h2>
+      <p><strong data-es="Email:" data-en="Email:">Email:</strong> luisangelrm@gmail.com</p>
+      <p><strong data-es="Teléfono:" data-en="Phone:">Teléfono:</strong> ‪+506 7292-1010‬</p>
+      <p><strong data-es="Dirección:" data-en="Address:">Dirección:</strong> Santa Cruz, Guanacaste, Costa Rica</p>
+
+      <!-- FOTO DE CONTACTO -->
+      <img class="img-section" src="contacto.jpg" alt="Imagen decorativa de contacto" />
+
+      <form>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <button id="theme-toggle">🌓</button>
+
+  <script>
+    let isSpanish = true;
+
+    function toggleLanguage() {
+      const elements = document.querySelectorAll('[data-es][data-en]');
+      elements.forEach(el => {
+        el.textContent = isSpanish ? el.dataset.en : el.dataset.es;
+      });
+
+      // Cambiar texto del botón
+      const toggleBtn = document.getElementById('language-toggle');
+      toggleBtn.textContent = isSpanish ? 'Change Language' : 'Cambiar idioma';
+
+      isSpanish = !isSpanish;
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Luis Ángel Rodríguez Márquez</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Estilo general del cuerpo */
+body {
+  background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  font-family: Arial, sans-serif; /* Fuente general */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del encabezado */
+header.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: white;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de cambio de idioma */
+#language-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#language-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Imagen de perfil */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+/* Estilo de las secciones */
+main {
+  padding: 2rem;
+  color: #333;
+}
+
+h1.title1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1.title, h2.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Imágenes de las secciones */
+.img-section {
+  max-width: 250px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Botón de tema */
+#theme-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Estilo del pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Enlace al archivo CSS */
